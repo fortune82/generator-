@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js" defer></script>
+    <title>Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Генератор паролей</h1>
+        <textarea class='outPassword'></textarea>
+
+        <div class='range'>
+            <div class="inputPassword">
+                <p>Выберите длину пароля </p>
+                <input type="range" step='1' min='1' max='20' value='1' class='valueRange'>
+                <span class='valueRangeOut'>1</span>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="copyText">Скопировать пароль</button>
+            <button class="generator">Сгенерировать</button>
+        </div>
+
+        <div class="chooseValue">
+            <div class="inpValue">
+                <label for='numberValue'> Цифры</label>
+                <input type="checkbox" name="number" id='numberValue' class="numberValue">
+            </div>
+
+            <div class="inpValue">
+                <label for='wordsValueRussian'> Буквы (кирилица) </label>
+                <input type="checkbox" name="number" id='wordsValueRussian' class="wordsValueRussian">
+            </div>
+
+            <div class="inpValue">
+                <label for='wordsValueEnglish'> Буквы (английские) </label>
+                <input type="checkbox" name="number" id='wordsValueEnglish' class="wordsValueEnglish">
+            </div>
+
+            <div class="inpValue">
+                <label for='symbol'> Символы</label>
+                <input type="checkbox" name="number" id='symbol' class="symbol">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
